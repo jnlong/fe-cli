@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>flexible.rem</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+    <script src="flexible.js"></script>
+    <style>
+        html { height: 100%; }
+        body { font-size: 24px; }
+        .text { background-color: #eee; border-bottom: 1px solid #000; border-top: .01rem solid #000; font-size: .24rem; line-height: .3rem; margin: .2rem 0; padding: .1rem 0; }
+        .box { margin-bottom: .2rem; overflow: hidden; }
+        .box-1 .item { font-size: 28px; height: 150px; width: 50%; }
+        .box-2 .item { font-size: .28rem; height: 2rem; width: 2rem; }
+        .box-3 .item { font-size: .28rem; height: 3.6rem; width: 3.6rem; }
+        .box .item { background-color: #eee; float: left; }
+        .box .item:first-child { background-color: #ddd; }
+        .banner { display: block; width: 100%; }
+    </style>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+    <div class="box box-1">
+        <div class="item">
+            宽度：50%
+            <br>
+            高度：320px
+            <br>
+            字号：28px
+        </div>
+        <div class="item">
+            不同设备，不同宽度，
+            <br>
+            不一定是正方形
+        </div>
+    </div>
+    <div class="box box-2">
+        <div class="item">
+            宽度：3.2rem
+            <br>
+            高度：3.2rem
+            <br>
+            字号：28px
+        </div>
+        <div class="item">
+            不同设备，不同宽度，
+            <br>
+            永远是正方形
+        </div>
+    </div>
+    <div class="box box-3">
+        <div class="item">
+            宽度：360px
+            <br>
+            高度：100px
+            <br>
+            字号：28px
+        </div>
+        <div class="item">
+            不同设备，不同宽度，
+            <br>
+            永远是正方形
+        </div>
+    </div>
+    <img class="banner" src="http://image5.tuku.cn/wallpaper/Fantasy%20Wallpapers/739_1920x1200.jpg">
+    <p class="text">
+        一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十
+        <br>
+        （font-size:.24rem，横竖屏文字同样大小；不同宽度设备文字个数相同）
+    </p>
+    <p>
+        没有设置字号的文字
+    </p>
+    <!-- <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p> -->
+</body>
+</html>

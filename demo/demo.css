@@ -1,0 +1,18 @@
+body{min-width: 320px;max-width: 420px;margin: 0 auto;}
+.cm{overflow: hidden;border-bottom: 1px solid #eee;background-color: #fff;}
+.cm-card{background-color: #fff;}
+.cm-hd{height: 40px;line-height: 40px;position: relative;margin-top: 10px;padding-left: 10px;border-left: 4px solid #39b555;border-bottom: 1px solid #eee;font-size: 18px;font-weight: 500;}
+.cm-bd{padding: 0 15px;border-bottom: 1px solid #eee;}
+.cn-nopadding{padding: 0;}
+.cn-line{line-height: 30px;}
+.cn-borderwap{overflow: hidden;border-top: 1px solid #eee;border-left: 1px solid #eee;}
+.cn-border{height: 30px;line-height: 30px;overflow: hidden;border-bottom: 1px solid #eee;border-right: 1px solid #eee;text-align: center;}
+
+.title{height: 50px;line-height: 50px;text-align: center;font-size: 22px;font-weight: 500;}
+.cm-flex{display: flex;display: -webkit-flex;}
+.cm-flex-link{flex: 1;}
+.cm-box{display: box;display: -webkit-box;}
+.cm-box-link{display: block;box-flex: 1;-webkit-box-flex: 1;}
+.cm-percent-link{float: left;width: 20%;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.cm-inline{font-size: 0;}
+.cm-inline-link{display: inline-block;width: 20%;box-sizing: border-box;-webkit-box-sizing: border-box;}

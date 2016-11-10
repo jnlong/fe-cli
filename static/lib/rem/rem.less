@@ -1,0 +1,30 @@
+/*1. 可以定义常用字体*/
+.f12{
+	font-size: 12px;
+}
+[data-dpr="2"] .f12{
+	font-size: 24px;
+}
+[data-dpr="3"] .f12{
+	font-size: 36px;
+}
+
+/*2. 也可以定义less 函数*/
+.fdpr(@fsize){
+    font-size: @fsize * 1px;
+
+    [data-dpr="2"] & {
+        font-size: @fsize * 2px;
+    }
+
+    [data-dpr="3"] & {
+        font-size: @fsize * 3px;
+    }
+}
+/*2.1 调用less函数*/
+.head{
+	.fdpr(13);
+}
+.nav p{
+    .fdpr(14);
+}

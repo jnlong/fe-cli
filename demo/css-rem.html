@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="font-size: 10px;" id="html">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>REM</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	body{background: #468220;}
+	.title{height: 20rem;border: 1px solid red;}
+	.logo{background: url(http://s0.m.hao123img.com/static/img/newzx/jqzb20160509-2.jpg) center no-repeat;background-size: auto;margin-top: 20px;}
+	.logo:after{content: '';display: block;}
+	.color{
+		width: 90%;
+		margin: 50px auto;
+		height: 30px;
+		/*background-color: rgba(0,0,0,.6);*/
+	}
+	.grend{
+		background-image: 
+		-webkit-gradient(
+			linear, left center, right center, 
+			from(transparent), color-stop(.1, rgba(0,0,0,.6)), to(rgba(0,0,0,.6))
+		);
+	}
+	.shadow{
+		box-shadow: 10px 0px 0px -15px rgba(0,0,0,.8),-20px 0px 30px -5px rgba(0,0,0,.8),10px 0px 0px -15px rgba(0,0,0,.8),20px 0px 30px -5px rgba(0,0,0,.8);
+		background-color: rgba(0,0,0,.6);
+	}
+	.color .shadow:nth-child(1){
+		display: inline-block;
+		width: 20px;
+	}
+</style>
+</head>
+<body>
+	<div class="color grend"></span><span class=""></span></div>
+	<div class="logo"></div>
+    <div class="title"></div>
+    <script type="text/javascript">
+    	  setFont = function() {
+		    var viewWidth = (window.innerHeight || document.documentElement.clientHeight,
+		    window.innerWidth || document.documentElement.clientWidth);
+		    var psdWidth = 720  ; //PSD宽度
+		    var  fontSize = 2 * viewWidth / psdWidth * 10;
+		    document.getElementById("html").style.fontSize = fontSize.toFixed(2) + "px";
+		  }
+		  setFont();
+    </script>
+</body>
+</html>
