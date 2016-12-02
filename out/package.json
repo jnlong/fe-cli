@@ -1,0 +1,19 @@
+{
+  "name": "fe-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "fis3 release user -wd out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jnlong/fe-cli.git"
+  },
+  "author": "zxl8310@163.com",
+  "license": "MIT",
+  "dependencies": {
+    "fis-parser-babel-5.x": "*",
+    "fis-lint-eslint": "1.x"
+  }
+}

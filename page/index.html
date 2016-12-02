@@ -20,12 +20,14 @@
 
 	<link rel="import" href="/page/template/list.tpl?__inline">
 
-	<script type="text/javascript" src="/static/lib/zepto.js"></script>
+	<!--script type="text/javascript" src="/static/lib/zepto.js"></script-->
 	<script type="text/javascript" src="/widget/head/head.js"></script>
 	<script type="text/javascript" src="/static/js/index.es6"></script>
 
 	<!-- 静态资源表 -->
 	<script type="text/javascript">
+		var $ = require('zepto/main');
+		var Iscroll = require('iscroll');
 		var _map = __RESOURCE_MAP__;
 		console.log(_map);
 	</script>

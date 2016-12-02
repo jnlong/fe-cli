@@ -3,7 +3,9 @@ fis.match('*.less', {
     parser: fis.plugin('less'),
     rExt: '.css'
 });
-
+fis.match('components/**/*.js', {
+    isMod: true
+});
 // es6
 fis.set('project.fileType.text', 'es,es6');
 fis.match('*.es6', {

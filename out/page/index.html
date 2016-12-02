@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>fe-project</title>
+	<meta content="telephone=no" name="format-detection">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<link rel="apple-touch-icon-precomposed" href="">
+
+    <link rel="stylesheet" type="text/css" href="/static/base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/widget/head/head.css" />
+</head>
+<body>
+	<h1>fis-demo</h1>
+	<section class="list" id="list"></section>
+	<header class="head icon-58 cm-reddot">hearder-widget</header>
+<header class="life"><span class="iconfont weibiaoti2zhuanhuan22">&#xe618;</span>iconfont</header>
+<ul class="cm-table mz_icon">
+	<li class="cm-table-child icon-baidu cm-ellipsis">百度你好你好</li>
+	<li class="cm-table-child icon-baidu">百度</li>
+	<li class="cm-table-child icon-baidu">百度</li>
+	<li class="cm-table-child icon-baidu">百度</li>
+	<li class="cm-table-child icon-baidu">百度</li>
+</ul>
+
+	<script type="text/tpl" id="listTpl">
+	<#list.forEach(function(a){#>
+	<a href="<#=a.url#>">
+	    <img src="<#=window.wiseHao123.httpsTrans(a.icon)#>" width="54" height="54" />
+	    <h3><#=a.title#></h3>
+	    <p>下载</p>
+	</a>
+	<#});#>
+</script>
+
+	<!--script type="text/javascript" src="/static/lib/zepto.js"></script-->
+
+	<!-- 静态资源表 -->
+
+<script type="text/javascript" src="/static/lib/mod.js"></script>
+<script type="text/javascript" src="/components/zepto/zepto.js"></script>
+<script type="text/javascript" src="/components/zepto/event.js"></script>
+<script type="text/javascript" src="/components/zepto/ajax.js"></script>
+<script type="text/javascript" src="/components/zepto/form.js"></script>
+<script type="text/javascript" src="/components/zepto/ie.js"></script>
+<script type="text/javascript" src="/components/zepto/main.js"></script>
+<script type="text/javascript" src="/components/iscroll/iscroll.js"></script>
+<script type="text/javascript" src="/widget/head/head.js"></script>
+<script type="text/javascript" src="/static/js/index.js"></script>
+<script type="text/javascript">
+		var _map = {
+    "res": {
+        "components/iscroll/iscroll-infinite.js": {
+            "uri": "/components/iscroll/iscroll-infinite.js",
+            "type": "js"
+        },
+        "components/iscroll/iscroll-lite.js": {
+            "uri": "/components/iscroll/iscroll-lite.js",
+            "type": "js"
+        },
+        "components/iscroll/iscroll-probe.js": {
+            "uri": "/components/iscroll/iscroll-probe.js",
+            "type": "js"
+        },
+        "components/iscroll/iscroll-zoom.js": {
+            "uri": "/components/iscroll/iscroll-zoom.js",
+            "type": "js"
+        },
+        "components/iscroll/iscroll.js": {
+            "uri": "/components/iscroll/iscroll.js",
+            "type": "js"
+        },
+        "components/zepto/ajax.js": {
+            "uri": "/components/zepto/ajax.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/assets.js": {
+            "uri": "/components/zepto/assets.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/callbacks.js": {
+            "uri": "/components/zepto/callbacks.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/data.js": {
+            "uri": "/components/zepto/data.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/deferred.js": {
+            "uri": "/components/zepto/deferred.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js",
+                "components/zepto/callbacks.js"
+            ]
+        },
+        "components/zepto/detect.js": {
+            "uri": "/components/zepto/detect.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/event.js": {
+            "uri": "/components/zepto/event.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/form.js": {
+            "uri": "/components/zepto/form.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/fx_methods.js": {
+            "uri": "/components/zepto/fx_methods.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js",
+                "components/zepto/fx.js"
+            ]
+        },
+        "components/zepto/fx.js": {
+            "uri": "/components/zepto/fx.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/gesture.js": {
+            "uri": "/components/zepto/gesture.js",
+            "type": "js"
+        },
+        "components/zepto/ie.js": {
+            "uri": "/components/zepto/ie.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/ios3.js": {
+            "uri": "/components/zepto/ios3.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/main.js": {
+            "uri": "/components/zepto/main.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/event.js",
+                "components/zepto/ajax.js",
+                "components/zepto/form.js",
+                "components/zepto/ie.js",
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/selector.js": {
+            "uri": "/components/zepto/selector.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/stack.js": {
+            "uri": "/components/zepto/stack.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/touch.js": {
+            "uri": "/components/zepto/touch.js",
+            "type": "js",
+            "deps": [
+                "components/zepto/zepto.js"
+            ]
+        },
+        "components/zepto/zepto.js": {
+            "uri": "/components/zepto/zepto.js",
+            "type": "js"
+        },
+        "demo/demo.css": {
+            "uri": "/demo/demo.css",
+            "type": "css"
+        },
+        "demo/demo.js": {
+            "uri": "/demo/demo.js",
+            "type": "js"
+        },
+        "static/css/base/common.less": {
+            "uri": "/static/css/base/common.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "static/css/base/icon.less": {
+            "uri": "/static/css/base/icon.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "static/css/base/reset.less": {
+            "uri": "/static/css/base/reset.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "static/css/index.less": {
+            "uri": "/static/css/index.css",
+            "type": "css"
+        },
+        "static/font/iconfont.css": {
+            "uri": "/static/font/iconfont.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "static/js/base/common.js": {
+            "uri": "/static/js/base/common.js",
+            "type": "js",
+            "pkg": "p1"
+        },
+        "static/js/https.js": {
+            "uri": "/static/js/https.js",
+            "type": "js"
+        },
+        "static/js/index.es6": {
+            "uri": "/static/js/index.js",
+            "type": "js",
+            "deps": [
+                "widget/head/head.js"
+            ]
+        },
+        "static/js/sample.js": {
+            "uri": "/static/js/sample.js",
+            "type": "js"
+        },
+        "static/lib/animate.css": {
+            "uri": "/static/lib/animate.css",
+            "type": "css"
+        },
+        "static/lib/fastclick.js": {
+            "uri": "/static/lib/fastclick.js",
+            "type": "js"
+        },
+        "static/lib/iscroll-lite4.js": {
+            "uri": "/static/lib/iscroll-lite4.js",
+            "type": "js"
+        },
+        "static/lib/iscroll-lite5.js": {
+            "uri": "/static/lib/iscroll-lite5.js",
+            "type": "js"
+        },
+        "static/lib/mod.js": {
+            "uri": "/static/lib/mod.js",
+            "type": "js"
+        },
+        "static/lib/rem/flexible.js": {
+            "uri": "/static/lib/rem/flexible.js",
+            "type": "js"
+        },
+        "static/lib/rem/rem.less": {
+            "uri": "/static/lib/rem/rem.css",
+            "type": "css"
+        },
+        "static/lib/swiper.animate.css": {
+            "uri": "/static/lib/swiper.animate.css",
+            "type": "css"
+        },
+        "static/lib/swiper.css": {
+            "uri": "/static/lib/swiper.css",
+            "type": "css"
+        },
+        "static/lib/zepto.js": {
+            "uri": "/static/lib/zepto.js",
+            "type": "js"
+        },
+        "widget/comp/carosel/carosel.css": {
+            "uri": "/widget/comp/carosel/carosel.css",
+            "type": "css"
+        },
+        "widget/comp/carosel/carosel.js": {
+            "uri": "/widget/comp/carosel/carosel.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "widget/comp/carosel/carosel"
+            }
+        },
+        "widget/head/head.js": {
+            "uri": "/widget/head/head.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "widget/head/head"
+            }
+        },
+        "widget/head/head.less": {
+            "uri": "/widget/head/head.css",
+            "type": "css"
+        }
+    },
+    "pkg": {
+        "p0": {
+            "uri": "/static/base.css",
+            "type": "css",
+            "has": [
+                "static/css/base/common.less",
+                "static/css/base/icon.less",
+                "static/css/base/reset.less",
+                "static/font/iconfont.css"
+            ]
+        },
+        "p1": {
+            "uri": "/static/base.js",
+            "type": "js",
+            "has": [
+                "static/js/base/common.js"
+            ]
+        }
+    }
+};
+		console.log(_map);
+		require('components/zepto/main');
+		require('components/iscroll/iscroll');
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width">
+	
+
+    <link rel="stylesheet" href="javascript:void(0)" />
+    <style>
+		a{text-decoration:none;}
+		a:link{color:#030;}
+		.hid{display: none;}
+		.con{border:1px solid #e00;width: auto;height: 40px;margin-bottom: 20px;text-align: center;}
+		.con a{display: inline-block;width: 100px;height: 40px;line-height: 40px;}
+		.con a:not(:last-child){margin-right: 20px;}
+		.con2{display: flex;justify-content:space-around;}
+		.con.con2 a{margin: 0;}
+		.con3{display: table;margin-left: auto;margin-right: auto;}
+		.con3 a{display: table-cell;text-align: center;}
+		.con4{width: 220px;margin-left: auto;margin-right: auto;}
+		.bg-wap{overflow: hidden;background: #eee;border: 1px solid #dadada;}
+		.bg{float: left;width: 150px;height: 500px;}
+		.bg-mutpic{
+			background:
+				url(img/1.jpg) 0 0 no-repeat,
+				url(img/2.jpg) 0 150px no-repeat,
+				url(img/3.jpg) 0 300px no-repeat;
+			background-size: 150px;
+		}
+		.bg-linaer1 p{height: 150px;}
+		.bg-linaer1 p:nth-of-type(1){background: linear-gradient(#f00,#0f0,#00f)}
+		.bg-linaer1 p:nth-of-type(2){background: -webkit-radial-gradient(#f00,#0f0,#00f)}
+	</style>
+</head>
+<body>
+	<div class="hid">
+		<div class="con con1"><a href="javascript:void(0)">测试button1</a><a href="javascript:void(0)">测试button2</a></div>
+		<div class="con con2"><a href="javascript:void(0)">测试button3</a></div>
+		<div class="con con3"><a href="javascript:void(0)">测试button1</a><a href="javascript:void(0)">测试button2</a></div>
+		<div class="con con4"><a href="javascript:void(0)">测试button1</a><a href="javascript:void(0)">测试button2</a></div>
+		<div class="con con5"><a href="javascript:void(0)">测试button1</a><a href="javascript:void(0)">测试button2</a></div>
+	</div>
+	<div class="bg-wap">
+		<div class="bg bg-mutpic"></div>
+		<div class="bg bg-linaer1"><p></p><p></p><p></p></div>
+	</div>
+
+
+</body>
+</html>
