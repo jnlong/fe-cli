@@ -1,0 +1,56 @@
+fis3 前端架构的目录结构整理
+
+具体代码可移步github: https://github.com/jnlong/fe-cli
+
+├─page
+│  │  index.tpl  业务模板, 放到本层
+│  │  layout.tpl
+│  └─template  公共tpl模板
+│        list.tpl
+├─static
+│  ├─css 	业务样式
+│  │  │  index.less
+│  │  └─base 公共样式
+│  │          common.less 将常用、复用率高的样式封装成公共样式库
+│  │          icon.less   统一管理icon，如base64、雪碧图
+│  │          reset.less
+│  ├─font (iconfont、第三方字体库)
+│  │      iconfont.less
+│  │      iconfont.woff
+│  ├─img 	图片要进行分类
+│  │  ├─icon
+│  │  │      icon-close.png
+│  │  │      icon-hot.png
+│  │  └─site
+│  │          mz_163.png
+│  │          mz_58.png
+│  ├─js
+│  │  │  https.es
+│  │  │  index.es
+│  │  │  sample.js
+│  │  ├─api		异步接口，统一管理
+│  │  └─base	基础公共js库
+│  │          common.js
+│  └─lib 		第三方js库
+│      │  zepto.js
+│      │  mod.js
+│      │  fastclick.js
+│      │  iscroll-lite4.js
+│      │  iscroll-lite5.js
+│      │  swiper.animate.css
+│      │  swiper.css
+│      │  animate.css
+│      └─rem
+│              flexible.js
+│              rem.less
+├─widget
+│  ├─comp
+│  │  └─carosel
+│  │          carosel.css
+│  │          carosel.html
+│  │          carosel.js
+│  └─head
+│          head.html
+│          head.js
+│          head.less
+├─fis-conf.js

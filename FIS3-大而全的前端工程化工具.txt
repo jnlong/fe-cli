@@ -1,0 +1,49 @@
+FIS3，大而全的前端工程化工具
+线上地址：https://github.com/jnlong/fe-cli/blob/master/FIS3-%E5%A4%A7%E8%80%8C%E5%85%A8%E7%9A%84%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%B7%A5%E5%85%B7.md
+简单的几行配置，即可使用前端工程化的基本功能；
+
+支持的功能
+
+1. [内置插件](http://fis.baidu.com/fis3/docs/api/config-system-plugin.html)，fis3内置了常用插件，免去了繁琐的插件安装
+2. 内容嵌入，使用`?__inline和__inline()`即可将资源文件的内容嵌入，也可以将图片转换成base64后嵌入
+3. 图片合并 CssSprite
+4. 文件压缩
+5. 添加时间戳，实现文件的强缓存
+6. 灵活的文件合并
+7. [安装第三方组件](https://github.com/fex-team/fis3-hook-components)
+8. FIS3 内置一个简易 [Web Server](http://fis.baidu.com/fis3/docs/beginning/debug.html)，可以方便调试构建结果
+9. [插件扩展](http://fis.baidu.com/fis3/docs/lv2.html)
+	lint：代码校验检查，比较特殊，所以需要 release 命令命令行添加 -l 参数
+	parser：预处理阶段，比如 less、sass、es6、react 前端模板等都在此处预编译处理
+	preprocessor：标准化前处理插件
+	standard：标准化插件，处理内置语法
+	postprocessor：标准化后处理插件
+10. [模块化](http://fis.baidu.com/fis3/docs/lv3.html)
+	var _map = __RESOURCE_MAP__; //js中打印资源映射表
+	考虑到不可能一个框架运用多个模块化框架（因为全都占用同样的全局函数，互斥），所以编译支持这块分成三个插件进行支持。
+	fis3-hook-commonjs
+	fis3-hook-amd
+	fis3-hook-cmd
+11. 支持[node-glob配置](http://fis.baidu.com/fis3/docs/api/config-glob.html)
+		FIS3 中支持的 glob 规则，FIS3 使用 node-glob 提供 glob 支持。
+12. 调试
+	通过inspect可以查看整个打包过程的日志，如 fis3 inspect debug(第三个参数是用户定义的media)，下面是打印的日志
+
+三种语言能力
+内容嵌入：将文件的内容嵌入；定位资源：获取资源的实际路径；声明依赖：
+
+多种web解决方案
+1. 针对smarty的方案 [fis-smarty](https://github.com/fex-team/fis3-smarty)
+2. 针对nodejs的方案 [yog2](http://fex.baidu.com/yog2/docs/)
+
+总结
+fis提供了简单的配置、强大的扩展功能，支持结合后端更好的实现组件化、模块化；
+而且fis提供了特别详细的文档和demo
+
+1. 官方文档
+2. 全部插件
+3. 插件开发
+4. github
+5. demo汇总
+6. 常用属性和配置汇总
+7. 常用插件

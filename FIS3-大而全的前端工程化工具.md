@@ -145,6 +145,7 @@
 		 * @require demo.css
 		 * @require list.js
 		 */
+
 ## 多种web解决方案
 1. 针对smarty的方案 [fis-smarty](https://github.com/fex-team/fis3-smarty)
 2. 针对nodejs的方案 [yog2](http://fex.baidu.com/yog2/docs/)
